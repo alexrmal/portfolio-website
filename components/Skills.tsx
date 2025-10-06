@@ -54,7 +54,9 @@ export default function Skills() {
                 delay: index * 0.05,
                 type: "spring",
                 stiffness: 200,
-                damping: 20
+                damping: 20,
+                hover: { duration: 0.1 },
+                tap: { duration: 0.1 }
               }}
               viewport={{ once: true }}
               whileHover={{ 
@@ -64,10 +66,6 @@ export default function Skills() {
               }}
               whileTap={{ 
                 scale: 0.95
-              }}
-              transition={{
-                hover: { duration: 0.1 },
-                tap: { duration: 0.1 }
               }}
               className={`rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-all duration-100 border cursor-pointer min-h-[120px] flex flex-col justify-center ${
                 isDarkMode 
