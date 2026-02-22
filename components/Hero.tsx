@@ -49,6 +49,7 @@ export default function Hero() {
                 alt="Alex Maldonado"
                 width={320}
                 height={500}
+                quality={100}
                 className="object-cover object-center w-full h-full"
                 priority
               />
